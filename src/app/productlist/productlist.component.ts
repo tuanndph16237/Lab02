@@ -60,13 +60,15 @@ export class ProductlistComponent implements OnInit {
     ];
   listProduct:IProduct[]=[];
 constructor() { }
+
 ngOnInit(): void {
-this.listProduct=this.products;
+  this.listProduct=this.products;
 }
+
 filterValue:string='';//ánh xạ tới textbox search
 filter(){
 //chọn sản phẩm có tên chưa tên giá trị nhập vào
-this.products=this.listProduct.filter(p=>p.productName.includes(this.filterValue));
+this.products=this.listProduct.filter(p=>p.productName.includes(this.filterValue))
+}
+}
 
-}
-}

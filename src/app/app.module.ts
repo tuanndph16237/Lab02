@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ProductlistComponent } from './productlist/productlist.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { StarComponent } from './star/star.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ProductlistComponent
+    ProductlistComponent,
+    StarComponent
   ],
   imports: [
     BrowserModule,
